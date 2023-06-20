@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Bienvenida | Arkham </title>
+    <meta name="description" content="Página web turística sobre la ciudad de Arkham.">
+    <meta name="keywords" content="Arkham, turismo, Lovecraft, Cthulu">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+    <script src="./js/app.js" async ></script>
+    <script src="js/modernizr.js" async ></script>
+        <link rel="shortcut icon" href="./img/icon/icon_A.svg">
+
+
+</head>
+
+<body id="body-index">
+    <div class="body-index-img">
+        <header class="header">
+            <div id="intro">
+                <div id="bienvenida">
+                    <div>
+                        <h1>Bienvenidos a Arkham</h1>
+                        <img class="logo_index" src="./img/icon/icon_A.svg" alt="Logo Arkham">
+                    </div>
+                </div>
+
+                <blockquote>
+                    <p> "Quienes buscan el horror frecuentan lugares extraños y lejanos.”</p>
+                    <cite>H.P. Lovecraft</cite>
+                </blockquote>
+
+                <picture id="arkham">
+                    <source media="(max-width: 767px)"
+                        srcset="img/barriofluvial.jpg?width=300&height=300&as=webp&quality=80">
+                    <source media="(min-width: 768px)"
+                        srcset="img/barriofluvial.jpg?width=500&height=500&as=webp&quality=80">
+                    <source media="(min-width: 1000px)"
+                        srcset="img/barriofluvial.jpg?width=900&height=900&as=webp&quality=80">
+                    <source srcset="img/barriofluvial.jpg?width=9900&height=900&as=webp&quality=80">
+                    <img class="arkham_img" loading="lazy" src="img/barriofluvial.jpg?width=9900&height=900&as=webp&quality=80" alt="Barrio fluvial de Arkham. Se ve la ciudad recortada sobre el cielo al otro lado de un puente."/>
+                </picture>
+
+                <nav class="nav-bienvenida">
+                    <div class="container">
+                        <ul class="nav-menu-index">
+                            <li class="nav-item">
+                                <a class="nav-link" href="información.html">Información general</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lugares_de_interés.html">Lugares de interés</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="planifica_tu_viaje.html">Planifica tu viaje</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="lugares_cercanos.html">Lugares cercanos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <p class="copy">2023 &copy; López Galiana, Noelia</p>
+
+                <div>
+                    <ul class="footer-top-menu">
+                        <li class="footer-top-item">
+                            <a class="footer-top-link" href="información.html">Información general</a>
+                        </li>
+                        <li class="footer-top-item">
+                            <a class="footer-top-link" href="lugares_de_interés.html">Lugares de interés</a>
+                        </li>
+                        <li class="footer-top-item">
+                            <a class="footer-top-link" href="planifica_tu_viaje.html">Planifica tu viaje</a>
+                        </li>
+                        <li class="footer-top-item">
+                            <a class="footer-top-link" href="lugares_cercanos.html">Lugares cercanos</a>
+
+                        </li>
+                    </ul>
+            </div>
+
+            <picture>
+                <source media="(max-width:767px)" srcset="./img/icon/icon_A.svg">
+                <source media="(min-width:768px)" srcset="./img/icon/icon_full.svg">
+                <img class="footer-logo" loading="lazy" src="./img/icon/icon_A.svg" alt="Logo Arkham">
+            </picture>
+        </div>
+
+        <div class="footer-bottom">
+            <ul class="footer-menu">
+                <li><a href="" title="Terms and conditions">Terms and conditions</a></li>
+                <li><a href="" title="Privacy policy">Privacy policy</a></li>
+                <li><a href="" title="Cookies">Cookies</a></li>
+                <li> <a href="contacto.html">Contacto</a></li>
+                <li> <a href="sobre_la_web.html">Sobre la web</a></li>
+            </ul>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
