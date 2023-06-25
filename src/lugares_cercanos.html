@@ -9,14 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css" media="screen" />
     <link rel="shortcut icon" href="./img/icon/icon_A.svg">
-    <script src="./js/app.js" async ></script>
-    <script src="js/modernizr.js" async ></script>
+    <script src="js/modernizr.js" async></script>
 
 </head>
 
 <body class="body-general">
     <header>
-        <h1>Lugares de interés</h1>
+        <h1>Lugares cercanos</h1>
         <nav>
             <div class="container">
                 <input type="checkbox" id="touch">
@@ -26,7 +25,8 @@
                 <ul class="nav-menu">
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">
-                            <img class="nav-link-logo" src="./img/icon/icon_full.svg" alt="Página principal">
+                            <img class="nav-link-logo" src="./img/icon/icon_full.svg" alt="Página principal"
+                                width="100%" height="100%">
                         </a>
                     </li>
                     <li class="nav-item">
@@ -53,25 +53,41 @@
 
                 <h2>Inssmouth</h2>
                 <figure>
-                    <img src="./img/inssmouth.jpg"
-                        alt="Paisaje de Innsmouth. Un pueblo costero fotografiado desde el mar. A la derecha aparece el pueblito y al fondo justo enfrente unas montañas. En realidad, la masa de agua corresponde a un lago.">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./img/inssmouth.jpg?&as=webp&quality=80">
+                        <source media="(min-width: 767px)"
+                            srcset="./img/inssmouth.jpg?max-width=500&as=webp&quality=80">
+                        <source media="(min-width: 1000px)"
+                            srcset="./img/inssmouth.jpg?maxwidth=900&as=webp&quality=80">
+                        <source srcset="./img/inssmouth.jpg?width=900&height=900&as=webp&quality=80">
+                        <img src="./img/inssmouth.jpg?&as=webp&quality=80"
+                            alt="Paisaje de Innsmouth. Un pueblo costero fotografiado desde el mar. A la derecha aparece el pueblito y al fondo justo enfrente unas montañas. En realidad, la masa de agua corresponde a un lago."
+                            width="100%" height="100%">
+                    </picture>
                     <figcaption>Un encantador pueblo costero a 20km de Arkham. Puedes pasear por su encantado paseo
-                        marítimo a la luz de la luna o conocer a los singulares lugareños.</figcaption>
+                        marítimo a la luz de la luna o conocer a los singulares lugareños. </figcaption>
                 </figure>
+
             </div>
 
             <div class="lugar">
 
                 <h2>Dunnwich</h2>
                 <figure>
-                    <img src="./img/dunnwich.jpg" alt="Paisaje de Dunnwich, un pueblo enclavado entre montañas.">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="./img/dunnwich.jpg?&as=webp&quality=80">
+                        <source media="(min-width: 767px)" srcset="./img/dunnwich.jpg?max-width=500&as=webp&quality=80">
+                        <source media="(min-width: 1000px)" srcset="./img/dunnwich.jpg?maxwidth=900&as=webp&quality=80">
+                        <source srcset="./img/dunnwich.jpg?width=900&height=900&as=webp&quality=80">
+                        <img src="./img/dunnwich.jpg?&as=webp&quality=80" loading="lazy"
+                            alt="Paisaje de Innsmouth. Un pueblo costero fotografiado desde el mar. A la derecha aparece el pueblito y al fondo justo enfrente unas montañas. En realidad, la masa de agua corresponde a un lago."
+                            width="100%" height="100%">
+                    </picture>
                     <figcaption>Muy cerca de Akham se puede visitar el pintoresco pueblo de Dunwich. Enclavado en medio
-                        de
-                        la
-                        naturaleza ofrece un encantador paisaje rural y una rica historia local.</figcaption>
+                        de la naturaleza ofrece un encantador paisaje rural y una rica historia local. </figcaption>
                 </figure>
             </div>
-
+        </div>
         </div>
 
     </main>
@@ -99,24 +115,24 @@
 
                         </li>
                     </ul>
+                </div>
+
+                <picture>
+                    <source media="(max-width:767px)" srcset="./img/icon/icon_A.svg">
+                    <source media="(min-width:768px)" srcset="./img/icon/icon_full.svg">
+                    <img class="footer-logo" src="./img/icon/icon_A.svg" alt="Arkham icono" width="100%" height="100%">
+                </picture>
             </div>
 
-            <picture>
-                <source media="(max-width:767px)" srcset="./img/icon/icon_A.svg">
-                <source media="(min-width:768px)" srcset="./img/icon/icon_full.svg">
-                <img class="footer-logo" src="./img/icon/icon_A.svg" alt="Arkham icono">
-            </picture>
-        </div>
-
-        <div class="footer-bottom">
-            <ul class="footer-menu">
-                <li><a href="" title="Terms and conditions">Terms and conditions</a></li>
-                <li><a href="" title="Privacy policy">Privacy policy</a></li>
-                <li><a href="" title="Cookies">Cookies</a></li>
-                <li> <a href="contacto.html">Contacto</a></li>
-                <li> <a href="sobre_la_web.html">Sobre la web</a></li>
-            </ul>
-        </div>
+            <div class="footer-bottom">
+                <ul class="footer-menu">
+                    <li><a href="" title="Terms and conditions">Terms and conditions</a></li>
+                    <li><a href="" title="Privacy policy">Privacy policy</a></li>
+                    <li><a href="" title="Cookies">Cookies</a></li>
+                    <li> <a href="contacto.html">Contacto</a></li>
+                    <li> <a href="sobre_la_web.html">Sobre la web</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
 

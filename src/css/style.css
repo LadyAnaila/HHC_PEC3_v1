@@ -1,3 +1,7 @@
+/*!
+ * @cssnano process
+ */
+
 @charset "UTF-8";
 
 /************************************
@@ -696,15 +700,15 @@ figcaption>a:hover {
 
 @keyframes latido {
   0% {
-    transform: scale(1);
+    transform: scale3D(1, 1, 1);
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale3D(1.1, 1.1, 1.1);
   }
 
   100% {
-    transform: scale(1);
+    transform: scale3D(1, 1, 1);
   }
 }
 
@@ -725,7 +729,7 @@ main {
 
 .main-general {
   width: 100%;
-  background-image: url("../img/patrón.png");
+  background-image: url("../img/patrón.webp");
   background-size: 15%;
   background-repeat: repeat-x;
   background-position: bottom;
